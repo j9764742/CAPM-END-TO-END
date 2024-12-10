@@ -1,0 +1,10 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:CAPM-END-TO-END}/capmapp/db.sqlite",
+            "name": "sqldb"
+        }
+    ]
+}
