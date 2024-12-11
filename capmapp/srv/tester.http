@@ -1,0 +1,56 @@
+###Get the service document
+http://localhost:4004/odata/v4/CatalogService/$metadata
+
+###Get All POs
+http://localhost:4004/odata/v4/CatalogService/POs?$expand=Items
+
+###POST - To create a new employee
+POST http://localhost:4004/odata/v4/CatalogService/EmployeeSet
+Content-Type: application/json
+
+{
+
+"nameFirst":"Saiyad",
+"nameMiddle":"",
+"nameLast":"Jaffer",
+"nameInitials":null,
+"sex":"M",
+"language":"E",
+"phoneNumber":"+918465839205",
+"email":"jaffersaiyad@sbpcorp.in",
+"loginName":"JafferSyed",
+"Currency_code":"INR",
+"salaryAmount":200000,
+"accountNumber":"222333444555",
+"bankId":"4325670",
+"bankName":"My Bank of INDIA"
+}
+
+###GET the data for testing
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet
+
+
+
+###PATCH
+PATCH http://localhost:4004/odata/v4/CatalogService/EmployeeSet/a36ef8f9-6952-490b-9e51-0429e919e2e2
+Content-Type: application/json
+
+{
+    "salaryAmount":5000000
+}
+
+###DELETE
+DELETE http://localhost:4004/odata/v4/CatalogService/EmployeeSet/cfdd0349-3e9c-4d85-80b5-2da0fa1704d8
+Content-Type: application/json
+
+
+###ACTION TESTING
+POST http://localhost:4004/odata/v4/CatalogService/EmployeeSet/b3557c89-e7e1-477a-ac40-b19d17673b92/boost
+Content-Type: application/json
+
+{ }
+
+
+###FUNCTION TESTING
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet/a437712c-1858-4b51-bdc3-1cd42f6dcd97/largestSalary
+
