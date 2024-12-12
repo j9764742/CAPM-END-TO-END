@@ -54,3 +54,11 @@ Content-Type: application/json
 ###FUNCTION TESTING
 http://localhost:4004/odata/v4/CatalogService/EmployeeSet/a437712c-1858-4b51-bdc3-1cd42f6dcd97/largestSalary
 
+
+###GET REQUEST TESTING
+https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_SALES_ORDER_SRV/A_SalesOrder?$top=50&$inlinecount=allpages
+ApiKey:T2HbkxQTpt5Jvn3N4Eq92qV1NukOH1iY
+
+
+###get the request
+http://localhost:4004/odata/v4/CatalogService/API_SALES_ORDER_SRV/A_SalesOrder?$top=50&$inlinecount=allpages
