@@ -6,5 +6,6 @@
             "database": "${workspaceFolder:CAPM-END-TO-END}/capmapp/db.sqlite",
             "name": "sqldb"
         }
-    ]
+    ],
+    "breadcrumbs.enabled": true
 }
